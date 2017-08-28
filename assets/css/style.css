@@ -1,0 +1,229 @@
+/* Global Stylesheet for Basic-Portfolio */
+/* created by Lane Anderson */
+
+/* ==== COLORS ====
+	Teal			:	#4aaaa5
+	Paragraph Font	:	#777
+	Header BG		:	#fff
+	Header Border	:	#ccc
+	Footer BG		:	#666
+	Main BG			:	#fff
+	Main Border		:	#ddd
+	Button Hover	:	#3a8783
+
+
+/* Global Styles */
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/bg-whirlpool.png);
+	height: 100%;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.wrapper {
+	margin: auto;
+}
+.content-width {
+	width: 960px;
+}
+.padding {
+	padding: 30px;
+}
+
+.margin {
+	margin: 30px;
+}
+.margin-r {
+	margin-right: 30px;
+}
+.margin-l {
+	margin-left: 30px;
+}
+.floating-footer {
+	min-height:100%;
+	height: 100%;
+	position: relative;
+}
+
+h1, h3, h4, a {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+h1, h3 {
+	color: #4aaaa5;
+}
+h1 {
+	font-size: 2em;
+	font-weight: 600;
+}
+h3 {
+	font-size: 1.2em;
+	font-weight: 600;
+}
+a, p {
+	font-size: 1em;
+}
+p, label {
+	line-height: 1.5;
+	color: #777;
+}
+label {
+	font-size: 1.2em;
+}
+a {
+	color: #777;
+	text-decoration: none;
+}
+.v-bar {
+	color: #777;
+	opacity: .1;
+	font-size: 1.5em;
+}
+hr {
+	margin: 0 30px;
+}
+input, textarea {
+	width: 100%;
+	font-size: 1em;
+	padding: 8px;
+	color: #777;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+}
+textarea {
+	height: 225px;
+}
+
+/* Header Styles */
+
+header {
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 40px;
+}
+
+header .page-heading {
+	display: inline-block;
+}
+header .page-heading h1, button {
+	background-color: #4aaaa5;
+	color: white;
+}
+nav a {
+	padding: 5px;
+	font-size: 1.2em;
+}
+nav a:hover {
+	color: #4aaaa5;
+	transition: .3s;
+}
+nav {
+	display: inline-block;
+	padding: 30px 0;
+	float: right;
+}
+
+/* Content Styles */
+.content-block {
+	margin-bottom: 60px;
+	box-sizing: border-box;
+	background-color: rgba(280, 280, 280, .7);
+	width: 650px;
+	float: left;
+	border: 1px solid #ddd;
+}
+.content {
+
+}
+.profile {
+	float: left;
+	margin-right: 20px;
+	width: 300px;
+}
+
+
+/* Sidebar Styles */
+aside {
+	box-sizing: border-box;
+	background-color: rgba(280, 280, 280, .7);;
+	width: 270px;
+	float: right;
+	border: 1px solid #ddd;
+}
+.third-width {
+	width: 31.9%;
+}
+
+/* Footer Styles */
+footer {
+	clear: both;
+	background-color: #666;
+	padding: 40px;
+	border-top: 10px solid #4aaaa5;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+
+}
+footer p {
+	font-size: .9em;
+	text-align: center;
+	opacity: .7;
+	color: white;
+}
+section {
+	padding-bottom: 100px;
+}
+
+/* Portfolio Page */
+/* Template */
+.portfolio-template {
+	margin: 30px;
+	margin-bottom: 0;
+	width: 250px;
+	height: 224px;
+	overflow: hidden;
+	position: relative;
+}
+.portfolio-template img, .portfolio-template iframe {
+	height: 100%;
+}
+.template-overlay {
+	width: 100%;
+	background-color: #4aaaa5;
+	position: absolute;
+	bottom: 33px;
+}
+.template-overlay h4 {
+	width: 100%;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Contact Page */
+/* Form Styles */
+label {
+	display: block;
+}
+button {
+	display: block;
+	padding: 10px 25px;
+	border: none;
+	font-size: 1.2em;
+}
+button:hover {
+	background-color: #3a8783;
+	transition: .3s;
+}
+
+
+
+
+
+
+
