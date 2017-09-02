@@ -85,8 +85,10 @@ header .page-heading {
 header .page-heading h1, button {
 	background-color: #4aaaa5;
 	color: white;
-	padding: 30px 0;
 	margin: 0;
+}
+header .page-heading h1{
+	padding: 30px 0;
 }
 nav a {
 	padding: 5px;
@@ -227,7 +229,7 @@ button:hover {
 	h1 {
 		font-size: 1.7em;
 	}
-	header .page-heading h1, button {
+	header .page-heading h1 {
 		padding: 32px 0;
 	}
 }
