@@ -3,98 +3,143 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lane Anderson Portfolio</title>
-	<!-- Clear Styles for Browser compatability -->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Bootstrap 3.3.7 CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- Custom Globoal Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 <body>
+
 	<!-- Header and Navigation Menu -->
-	<header>
-		<div class="content-width wrapper">
-			<!-- Page Heading -->
-			<div class="page-heading">
-				<h1 class="padding">Lane Anderson</h1>
+	<header class="container-fluid">
+		<div class="container desktop-nav">
+			<div class="row">
+				<!-- Page Heading -->
+				<div class="col-xs-4 page-heading text-center">
+					<div>
+						<h1>Lane Anderson</h1>
+					</div>
+				</div> <!-- end col-xs-6 -->
+				<!-- Navigation Menu -->
+				<div class="col-xs-6 col-xs-offset-2 text-right">
+					<nav>
+						<a href="index.html">About</a>
+						<span class="v-bar"> | </span>
+						<a href="#">Portfolio</a>
+						<span class="v-bar"> | </span>
+						<a href="contact.html">Contact</a>
+					</nav>
+				</div> <!-- end col-xs-6 -->
+			</div> <!-- end row -->
+		</div> <!-- end container -->
+		<div class="container-fluid mobile-nav">
+			<div class="row ">
+				<!-- Page Heading -->
+				<div class="col-12 page-heading text-center">
+					<div>
+						<h1>Lane Anderson</h1>
+					</div>
+				</div> <!-- end col-xs-6 -->
 			</div>
 			<!-- Navigation Menu -->
-			<nav>
-				<a href="index.html">About</a>
-				<span class="v-bar"> | </span>
-				<a href="#">Portfolio</a>
-				<span class="v-bar"> | </span>
-				<a href="contact.html">Contact</a>
-			</nav>
+			<div class="row">
+				<div class="col-12 text-center">
+					<nav>
+						<a href="#">About</a>
+						<span class="v-bar"> | </span>
+						<a href="portfolio.html">Portfolio</a>
+						<span class="v-bar"> | </span>
+						<a href="contact.html">Contact</a>
+					</nav>
+				</div> <!-- end col-xs-6 -->
+			</div> <!-- end row -->
 		</div>
 	</header>
 
+
 	<!-- Main Content Section: Includes Content and Sidebar -->
-	<section class="content-width wrapper">
-		<div class="content-block ">
-			<h1 class="margin">Portfolio</h1>
-			<hr>
-			<div class="content">
-				<div class="portfolio-template float-left">
-					<img src="http://infovest.com/wp-content/uploads/2013/10/dreamstimelarge_22891879.jpg" alt="hangman">
-					<div class="template-overlay">
-						<h4>Hangman</h4>
-					</div>
-				</div>
+	<section class="container">
+		<div class="row ">
+			<div class="col-sm-8 content-block">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1 class="margin">Portfolio</h1>
+						<hr>
+					</div> <!-- end col-sm-12 -->
+				</div> <!-- end row -->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 portfolio-template">
+							<img class="img-responsive" src="http://infovest.com/wp-content/uploads/2013/10/dreamstimelarge_22891879.jpg" alt="hangman">
 
-				<div class="portfolio-template float-right">
-					<img src="http://images.playgroundmag.net/articulos/columnas/Juego-Tronos-debe-Historia_PLYIMA20140410_0004_9.jpg">
-					<div class="template-overlay">
-						<h4>RPG Game</h4>
-					</div>
-				</div>
+							<div class="template-overlay">
+								<h4>Hangman</h4>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 portfolio-template">
+							<img class="img-responsive" src="http://images.playgroundmag.net/articulos/columnas/Juego-Tronos-debe-Historia_PLYIMA20140410_0004_9.jpg">
+							<div class="template-overlay">
+								<h4>RPG Game</h4>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 portfolio-template">
+							<img class="img-responsive" src="https://pentanglearts.org/wp-content/uploads/2017/04/Good-will-hunting.jpg" alt="Trivia Game">
+							<div class="template-overlay">
+								<h4>Trivia Game</h4>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 portfolio-template">
+							<img class="img-responsive" src="http://www.veritas.org/wp-content/uploads/2013/09/Rutgers.jpg">
+							<div class="template-overlay">
+								<h4>Rutgers Info Widget</h4>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-6 col-xs-12 portfolio-template">
+							<img class="img-responsive" src="http://cdn.newsapi.com.au/image/v1/85b6f99a1f31a83bfc4af6c71501948d">
+							<div class="template-overlay">
+								<h4>Rock Paper Scissors</h4>
+							</div>
+						</div>
+					</div> <!-- end col-sm-12 -->
+				</div> <!-- end row -->
+			</div> <!-- end col-sm-9 -->
+			
+			<!-- Sidebar -->
+			<aside class="col-sm-3 col-sm-offset-1">
+				<div class="row">
+					<div class="col-sm-12">
+						<h3 class="">Connect with Me</h3>
+						<hr>
+					</div> <!-- end col-sm-12 -->
+				</div> <!-- end row -->
+				<div class="row">
+					<div class="col-sm-12 col-xs-4">
+						<!-- Social Icons -->
+						<a href="https://github.com/laneelliott" target="_blank">
+							<img class="third-width" src="assets/images/logo-github.png" alt="Github">
+						</a>
+						<a href="https://www.linkedin.com/in/lane-anderson-836735125/" target="_blank">
+							<img class="third-width" src="assets/images/logo-linkedin.png" alt="LinkedIn">
+						</a>
+						<a href="https://stackoverflow.com/users/7547775/landerson" target="_blank">
+							<img class="third-width" src="assets/images/logo-stackoverflow.png" alt="Stack Overflow">
+						</a>
+					</div> <!-- end col-lg-12 -->
+				</div> <!-- end row -->
+			</aside> <!-- end aside -->
+		</div> <!-- end row -->
 
-				<div class="portfolio-template float-left">
-					<img src="https://pentanglearts.org/wp-content/uploads/2017/04/Good-will-hunting.jpg" alt="Trivia Game">
-					<div class="template-overlay">
-						<h4>Trivia Game</h4>
-					</div>
-				</div>
 
-				<div class="portfolio-template float-right">
-					<img src="http://www.veritas.org/wp-content/uploads/2013/09/Rutgers.jpg">
-					<div class="template-overlay">
-						<h4>Rutgers Info Widget</h4>
-					</div>
-				</div>
-
-				<div class="portfolio-template float-left">
-					<img src="http://cdn.newsapi.com.au/image/v1/85b6f99a1f31a83bfc4af6c71501948d">
-					<div class="template-overlay">
-						<h4>Rock Paper Scissors</h4>
-					</div>
-				</div>
-				
-			</div> <!-- end content -->
-		</div> <!-- end content-block -->
-
-		<!-- Sidebar -->
-		<aside>
-			<h3 class="margin">Connect with Me</h3>
-			<hr>
-			<div class="padding">
-				<!-- Social Icons -->
-				<a href="https://github.com/laneelliott" target="_blank">
-					<img class="third-width" src="assets/images/logo-github.png" alt="Github">
-				</a>
-				<a href="https://www.linkedin.com/in/lane-anderson-836735125/" target="_blank">
-					<img class="third-width" src="assets/images/logo-linkedin.png" alt="LinkedIn">
-				</a>
-				<a href="https://stackoverflow.com/users/7547775/landerson" target="_blank">
-					<img class="third-width" src="assets/images/logo-stackoverflow.png" alt="Stack Overflow">
-				</a>
-			</div>
-		</aside>
-	</section>
+	</section>  <!-- end container -->
 
 	<!-- Footer -->
-	<footer>
-		<p>&copy; Copyright 2017 Lane Anderson</p>
-	</footer>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<p>&copy; Copyright 2017 Lane Anderson</p>
+			</div> <!-- end col-12 -->
+		</div> <!-- end row -->
+	</footer> <!-- end container -->
 
 </body>
 </html>

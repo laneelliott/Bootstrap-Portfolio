@@ -103,6 +103,7 @@ nav {
 
 /* Content Styles */
 .content-block {
+	padding-bottom: 20px;
 	margin-bottom: 60px;
 	background-color: rgba(280, 280, 280, .7);
 	border: 1px solid #ddd;
@@ -148,28 +149,25 @@ section {
 /* Portfolio Page */
 /* Template */
 .portfolio-template {
-	margin: 30px;
-	margin-bottom: 0;
-	width: 250px;
-	height: 224px;
 	overflow: hidden;
 	position: relative;
 }
-.portfolio-template img, .portfolio-template iframe {
-	height: 100%;
+.portfolio-template img {
+	margin: 8px 0;
 }
+
 .template-overlay {
-	width: 100%;
+	width: 92%;
 	background-color: #4aaaa5;
 	position: absolute;
-	bottom: 33px;
+	bottom: 22px;
 }
 .template-overlay h4 {
 	width: 100%;
 	color: white;
 	padding: 20px;
 	text-align: center;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 /* Contact Page */
@@ -196,8 +194,15 @@ button:hover {
 	display: none;
 }
 /* ========= Media Queries ============ */
+@media only screen and (max-width : 1199px) {
+	.template-overlay {
+	width: 95.2%;
+}
+
 @media only screen and (max-width : 991px) {
-	
+	.template-overlay {
+		width: 87.2%;
+	}
 	.profile {
 		float: none;
 		margin-bottom: 20px;
@@ -207,6 +212,9 @@ button:hover {
 
 
 @media only screen and (max-width : 767px) {
+	.template-overlay {
+		width: 95.4%;
+	}
 	.container {
 		margin-right: 15px;
     	margin-left: 15px;
@@ -225,6 +233,9 @@ button:hover {
 }
 
 @media only screen and (max-width : 640px) {
+	.template-overlay {
+		width: 94.8%;
+	}
 	.profile {
 		float: none;
 		margin-bottom: 20px;
