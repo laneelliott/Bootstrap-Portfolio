@@ -18,36 +18,6 @@ body {
 	background-image: url(../images/bg-whirlpool.png);
 	height: 100%;
 }
-.float-left {
-	float: left;
-}
-.float-right {
-	float: right;
-}
-.wrapper {
-	margin: auto;
-}
-.content-width {
-	width: 960px;
-}
-.padding {
-	padding: 30px;
-}
-
-.margin {
-	margin: 30px;
-}
-.margin-r {
-	margin-right: 30px;
-}
-.margin-l {
-	margin-left: 30px;
-}
-.floating-footer {
-	min-height:100%;
-	height: 100%;
-	position: relative;
-}
 
 h1, h3, h4, a {
 	font-family: 'Georgia', Times, Times New Roman, serif;
@@ -82,8 +52,12 @@ a {
 	opacity: .1;
 	font-size: 1.5em;
 }
+.third-width {
+	width: 31%;
+}
+
 hr {
-	margin: 0 30px;
+	/*margin: 0 30px;*/
 }
 input, textarea {
 	width: 100%;
@@ -106,11 +80,13 @@ header {
 }
 
 header .page-heading {
-	display: inline-block;
+	display: block;
 }
 header .page-heading h1, button {
 	background-color: #4aaaa5;
 	color: white;
+	padding: 30px 0;
+	margin: 0;
 }
 nav a {
 	padding: 5px;
@@ -123,16 +99,12 @@ nav a:hover {
 nav {
 	display: inline-block;
 	padding: 30px 0;
-	float: right;
 }
 
 /* Content Styles */
 .content-block {
 	margin-bottom: 60px;
-	box-sizing: border-box;
 	background-color: rgba(280, 280, 280, .7);
-	width: 650px;
-	float: left;
 	border: 1px solid #ddd;
 }
 .content {
@@ -147,14 +119,9 @@ nav {
 
 /* Sidebar Styles */
 aside {
-	box-sizing: border-box;
-	background-color: rgba(280, 280, 280, .7);;
-	width: 270px;
-	float: right;
+	background-color: rgba(280, 280, 280, .7);
 	border: 1px solid #ddd;
-}
-.third-width {
-	width: 31.9%;
+	padding: 15px;
 }
 
 /* Footer Styles */
@@ -221,6 +188,57 @@ button:hover {
 	transition: .3s;
 }
 
+
+.desktop-nav {
+	display: block;
+}
+.mobile-nav {
+	display: none;
+}
+/* ========= Media Queries ============ */
+@media only screen and (max-width : 991px) {
+	
+	.profile {
+		float: none;
+		margin-bottom: 20px;
+		width: 100%
+	}
+}
+
+
+@media only screen and (max-width : 767px) {
+	.container {
+		margin-right: 15px;
+    	margin-left: 15px;
+	}
+	.profile {
+		float: left;
+		margin-right: 20px;
+		width: 300px;
+	}
+	h1 {
+		font-size: 1.7em;
+	}
+	header .page-heading h1, button {
+		padding: 32px 0;
+	}
+}
+
+@media only screen and (max-width : 640px) {
+	.profile {
+		float: none;
+		margin-bottom: 20px;
+		width: 100%
+	}
+	.desktop-nav {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+		margin-right: -15px;
+    	margin-left: -15px;
+	}
+}
 
 
 
